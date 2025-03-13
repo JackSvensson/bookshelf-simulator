@@ -21,22 +21,8 @@
             <div class="book"></div>
             <div class="book"></div>
             <div class="book"></div>
-        </div>
 
-        <div class="bookshelf">
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-        </div>
 
-        <div class="bookshelf">
             <div class="book"></div>
             <div class="book"></div>
             <div class="book"></div>
@@ -47,9 +33,18 @@
             <div class="book"></div>
             <div class="book"></div>
             <div class="book"></div>
-        </div>
 
-        <div class="bookshelf">
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+
             <div class="book"></div>
             <div class="book"></div>
             <div class="book"></div>
