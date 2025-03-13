@@ -61,6 +61,40 @@ if (!empty($searchQuery)) {
     <div class="bookshelf-container">
         <div class="bookshelf">
             <?php
+            if ($searchResults){
+                foreach ($searchResults as $book): 
+                ?><div class="book" style="height:<?= $book['pages'] ?>px; width:<?= $book['pages'] * 0.3 ?>px;">
+                    <div>
+                        <p style="font-size:
+                            <?php 
+                            $calculatedSize = $book['pages']*0.05;
+                            if ($calculatedSize < 12) {
+                                echo 12;
+                            } else if ($calculatedSize > 50) {
+                                echo 50;
+                            } else {
+                                echo $calculatedSize;
+                            }
+                            ?>px;"><?= $book['name'] ?>
+                        </p>
+
+                        <p style="font-size:
+                            <?php 
+                            $calculatedSize = $book['pages']*0.03;
+                            if ($calculatedSize < 10) {
+                                echo 10;
+                            } else if ($calculatedSize > 40) {
+                                echo 40;
+                            } else {
+                                echo $calculatedSize;
+                            }
+                            ?>px;"><?= $book['author'] ?>
+                        </p>
+                    </div>
+                </div>
+            <?php
+            endforeach;
+        } else {
             foreach ($allBooks as $book): 
                 ?><div class="book" style="height:<?= $book['pages'] ?>px; width:<?= $book['pages'] * 0.3 ?>px;">
                     <div>
@@ -93,7 +127,8 @@ if (!empty($searchQuery)) {
                 </div>
             <?php
             endforeach;
-            ?>
+        }
+        ?>
         </div>
     </div>
 </body>
