@@ -59,12 +59,12 @@ form {
 }
 
 .search-button:hover {
-    background-color: #3a6ad7;
+    background-color: #0a890a;
 }
 
 .search-button:active {
     transform: translateY(1px);
-    background-color: #2a5ac7;
+    background-color: #0d940d;
 }
 
 .bookshelf-container {
