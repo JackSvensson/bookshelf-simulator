@@ -14,7 +14,7 @@ body {
     position: relative;
     overflow-x: auto;
     white-space: nowrap;
-    width: 50000px;
+    width: 5000px;
 }
 
 .bookshelf-container::after {
