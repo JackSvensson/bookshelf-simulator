@@ -21,9 +21,34 @@ $allBooks = $bookshelf->getAllBooks();
 
             <?php
             foreach ($allBooks as $book): 
-                ?><div class="book" style="height:<?= $book['pages'] ?>px; width:<?= $book['pages'] * 0.3 ?>px; min-width:50px; max-height:90vh;">
-                    <p><?= $book['name'] ?></p>
-                    <p><?= $book['author'] ?></p>
+                ?><div class="book" style="height:<?= $book['pages'] ?>px; width:<?= $book['pages'] * 0.3 ?>px;">
+                    <div>
+                        <p style="font-size:
+                            <?php 
+                            $calculatedSize = $book['pages']*0.05;
+                            if ($calculatedSize < 12) {
+                                echo 12;
+                            } else if ($calculatedSize > 50) {
+                                echo 50;
+                            } else {
+                                echo $calculatedSize;
+                            }
+                            ?>px;"><?= $book['name'] ?>
+                        </p>
+
+                        <p style="font-size:
+                            <?php 
+                            $calculatedSize = $book['pages']*0.03;
+                            if ($calculatedSize < 10) {
+                                echo 10;
+                            } else if ($calculatedSize > 40) {
+                                echo 40;
+                            } else {
+                                echo $calculatedSize;
+                            }
+                            ?>px;"><?= $book['author'] ?>
+                        </p>
+                    </div>
                 </div>
             <?php
             endforeach;
